@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net472</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <RootNamespace>BindingRedirector</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Target\Target.csproj"/>
+    </ItemGroup>
+
+    <Target Name="CopyAssemblies" AfterTargets="Build">
+        <Copy SourceFiles="..\Version2\bin\Debug\net472\RedirectionTarget.dll" DestinationFiles="$(OutputPath)\Version2\RedirectionTarget.dll" />
+        <Copy SourceFiles="..\VersionRepacked\bin\Debug\net472\RedirectionTarget.dll" DestinationFiles="$(OutputPath)\VersionRepacked\RedirectionTarget.dll" />
+    </Target>
+
+</Project>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="RedirectionTarget">
+        <HintPath>..\Version1\bin\Debug\net472\RedirectionTarget.dll</HintPath>
+        <Private>False</Private>
+      </Reference>
+    </ItemGroup>
+
+</Project>

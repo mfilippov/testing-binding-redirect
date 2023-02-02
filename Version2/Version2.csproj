@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <Nullable>enable</Nullable>
+        <RootNamespace>RedirectionTarget</RootNamespace>
+        <AssemblyName>RedirectionTarget</AssemblyName>
+        <AssemblyVersion>2.0.0</AssemblyVersion>
+        <AssemblyOriginatorKeyFile>..\key.snk</AssemblyOriginatorKeyFile>
+        <SignAssembly>true</SignAssembly>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+</Project>
